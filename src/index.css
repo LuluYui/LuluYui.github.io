@@ -17,6 +17,8 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer components {
   .container {
     width: 100%;
@@ -38,7 +40,6 @@
   line-height: 2.5;
   font-weight: 400;
 
-  color-scheme: light dark;
   /* Light mode by default */
   color: #213547;
   background-color: #ffffff;
@@ -49,23 +50,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Dark mode styles */
-html.dark {
-  color: rgba(255, 240, 230, 0.87);
-  background-color: #181818;
-}
-
-a {
-  font-weight: 500;
+.menu {
   text-decoration: inherit;
 }
 
-a:hover {
-  color: #747bff;
-}
-
-html.dark a:hover {
-  color: #393939 !important;
+/* Dark mode styles */
+body {
+  @apply bg-[#e2e8f0] dark:bg-[#030202] transition-colors duration-300 text-black dark:text-[#e2e8f0];
 }
 
 body {
@@ -75,9 +66,7 @@ body {
   width: 100%;
 }
 
-#root {
-  width: 100%;
-}
+#root { width: 100%; }
 
 .btn {
   font-size: 1em;
@@ -93,6 +82,10 @@ body {
   color: #434343;
 }
 
+.dark .btn:hover {
+  color: #e2e8f0;
+}
+
 .btn::after {
   content: '';
   position: absolute;
@@ -101,9 +94,13 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #181818;
+  background-color: #201E1F;
   transform-origin: bottom right;
   transition: transform 0.20s ease-out;
+}
+
+.dark .btn::after {
+  background-color: #ffffff;
 }
 
 .btn:hover::after{

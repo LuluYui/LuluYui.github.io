@@ -3,7 +3,10 @@ import reactLogo from './assets/svgs/react.svg'
 import viteLogo from '/vite.svg'
 import sun from './assets/svgs/sun.svg'
 import moon from './assets/svgs/moon.svg'
+import ExperienceTimeline from './ExperienceTimeline.jsx'
+import Footer from './Footer.jsx'
 import './App.css'
+import Skills from './Skills.jsx'
 
 function useDarkMode() {
   // Initialize state from localStorage or system preference
@@ -19,6 +22,7 @@ function useDarkMode() {
   useEffect(() => {
     const root = window.document.documentElement;
     root.classList.toggle('dark', darkMode);
+    root.style.colorScheme = darkMode ? 'dark' : 'light';
   }, [darkMode]);
 
   // Effect to listen for OS theme changes
@@ -50,8 +54,8 @@ function MenuBar() {
   // color #1587bd
   return (
     <header className="font-creato sticky top-0 z-50">
-      <div className="flex justify-between py-1 shadow-xl/5">
-        <a className="flex py-1 pl-4" href="#home">
+      <div className="menu flex justify-between py-1 shadow-xl/5">
+        <a className="logo flex py-1 pl-4" href="#home">
           <h1> Chris Yip</h1>
         </a>
         <div className="flex items-center gap-6 text-xl pr-4">
@@ -92,79 +96,6 @@ function About() {
   );
 }
 
-function Skills() {
-
-  return (
-    <div className="skill-icon col-xs-3 col-sm-2 col-md-2">
-      <img className="img-responsive" src="assets/svgs/html-5-logo-svgrepo-com.svg" alt="HTML5 Logo"/>
-    </div>
-  );
-}
-
-function Experience() {
-  /*
-    Using Card View to organize these 
-    
-    Template: 
-    <h1> Company Name </h1>
-    <h2> Title </h2>
-    <p> Duration </p>
-    <ul>
-      <li> Description </li>
-      <li> Description </li>
-    </ul>
-  */ 
-  function Card() {
-    return (
-      /* TODO */
-      <div>
-        {/* upper
-        lower */}
-
-      </div>
-
-    );
-  }
-
-  return (
-    <div className="container">
-      <h1 className="font-creato py-3 text-4xl font-bold"> Experience </h1>
-      <hr />
-      
-      <h1 className="font-creato p-3 text-2xl mt-4"> Advanced Resources Limited </h1>
-      <div className="font-creato flex flex-col sm:flex-row justify-between items-start sm:items-center px-8 gap-2">
-        <h2 className="italic"> Technical Assistant (Contract) - Hong Kong Housing Authority Placement</h2>
-        <p className="flex-shrink-0"> Nov 2020 - Dec 2021 </p>
-      </div>
-      <ul role="list" className="font-creato list-disc px-8 marker:text-amber-800 marker:text-2xl">
-        <li> Housing Infrastructure & Asset Management: Streamlined maintenance workflows for Multimedia Interactive Systems, achieving fast defect resolution through improved vendor negotiations.</li>
-        <li> Compliance & Vendor Coordination: Authored technical guidelines and maintenance protocol as well as Vendor monitoring, ensuring alignment with HA Housing Hub operational stability and zero equipment downtime. </li>
-      </ul>
-
-      <h1 className="p-3 text-2xl mt-4"> Ming Hing Waterworks Engineering Co. Ltd </h1>
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center px-8 gap-2">
-        <h2 className="italic"> Meter Works Coordinator - WSD HKSARG Placement	</h2>
-        <p className="flex-shrink-0"> Nov 2020 - Dec 2021 </p>
-      </div>
-      <ul role="list" className="list-disc px-8 marker:text-amber-800 marker:text-2xl">
-        <li> Geospatial Data Integration: Leveraged ArcGIS Pro and Python to enhance DMA/PMA zonal data accuracy, troubleshooting various water leak indicators errors of WSD INMS system. </li>
-        <li> Software Development : Develop In-house tools for WebGIS Visualization, using leaflet and OpenStreetMap, drafting presentation and reports. </li>
-      </ul>
-
-      <h1 className="p-3 text-2xl mt-4"> RaSpect AI </h1>
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center px-8 gap-2">
-        <h2 className="italic"> Software Engineering Intern / GIS Analst </h2>
-        <p className="flex-shrink-0"> Nov 2020 - Dec 2021 </p>
-      </div>
-      <ul role="list" className="list-disc px-8 marker:text-amber-800 marker:text-2xl">
-        <li> Photogrammetry : Developed 3D models (Pix4D) for HK Architecture Department’s (ArchD) heritage conservation projects, under PSTS scheme.  </li>
-        <li> Machine Learning Pipelines: Training and Inference using fine-tuned Meta Detectron 2 and YOLOV3  models on facade defects detections. Maintaining drone imagery and training labels database. Developing python/bash scripts for different data management automation.  </li>
-        <li> Data Annotions : Implemented CVAT (Docker) for annotation management, accelerating model training cycles and management cache database (Redis). </li>
-      </ul>
-
-    </div>
-  );
-}
 
 function Education() {
   return(
@@ -186,14 +117,6 @@ function Education() {
   );
 }
 
-function Timeline() {
-    return (
-	<div>
-	    <h1> Hello World </h1>
-	</div>
-    );
-}
-
 function App() {
 
   return (
@@ -208,14 +131,17 @@ function App() {
           <About />
         </div>
         <div className="snap-start snap-normal min-h-dvh flex items-center justify-center py-16 sm:py-24">
-            {/*<Experience />*/}
-	    {<Timeline />}
+          <Skills /> 
+        </div>
+        <div className="snap-start snap-normal min-h-dvh flex items-center justify-center py-16 sm:py-24">
+          <ExperienceTimeline />
         </div>
         <div className="snap-start snap-normal min-h-dvh flex items-center justify-center py-16 sm:py-24">
           <Education />
         </div>
-        <h1> Contact Me </h1>
-        <h1> Bottom </h1>
+        <div className="snap-end flex items-center justify-center">
+          <Footer />
+        </div>
       </div>
     </div>
   )
