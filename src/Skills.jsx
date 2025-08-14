@@ -1,18 +1,28 @@
-import reactLogo from "./assets/svgs/react.svg";
-import html5 from "./assets/svgs/HTML5.svg";
-import python from "./assets/svgs/python.svg";
+// Dynamically import all SVG files from the assets/svgs directory.
+// `import.meta.glob` is a Vite feature that handles this.
+const skillIcons = import.meta.glob("./assets/svgs/skills/*.svg", { eager: true });
 
-const skillsData = [
-  { name: "HTML5", logo: html5, alt: "HTML5 Logo", background: "yellow"},
-  { name: "Python", logo: python, alt: "Python Logo" },
-  { name: "React", logo: reactLogo, alt: "React Logo" },
-];
+// Create an array of skill objects from the imported files,
+// excluding the sun and moon icons used for theme toggling.
+const skillsData = Object.entries(skillIcons)
+  .filter(([path]) => !path.endsWith("sun.svg") && !path.endsWith("moon.svg"))
+  .map(([path, logoUrl]) => {
+    // Extract a display name from the file path (e.g., './assets/svgs/react.svg' -> 'React')
+    const fileName = path.split("/").pop();
+    const name = fileName.split(".")[0];
+    const displayName = name.charAt(0).toUpperCase() + name.slice(1);
+    return {
+      name: displayName,
+      logo: logoUrl.default,
+      alt: `${displayName} Logo`,
+    };
+  });
 
 export default function Skills() {
   return (
-    <div className="skills text-center">
-      <h1 className="text-3xl font-bold mb-8">SOME TECHNOLOGIES I'VE WORKED WITH</h1>
-      <div className="flex justify-center gap-10">
+    <div className="skills w-full max-w-4xl px-4 text-center">
+      <h1 className="text-3xl font-bold mb-8">TECHNOLOGIES THAT I'VE WORKED WITH</h1>
+      <div className="flex flex-wrap justify-center gap-x-10 gap-y-8">
         {skillsData.map((skill) => (
           <img
             key={skill.name}

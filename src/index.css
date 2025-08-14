@@ -17,6 +17,13 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+@utility scrollbar-hidden {  
+  scrollbar-width: none; /* For Firefox */
+  &::-webkit-scrollbar {
+    display: none; 
+  }
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer components {
@@ -57,13 +64,11 @@
 /* Dark mode styles */
 body {
   @apply bg-[#e2e8f0] dark:bg-[#030202] transition-colors duration-300 text-black dark:text-[#e2e8f0];
-}
-
-body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   width: 100%;
+  scrollbar-width: none;
 }
 
 #root { width: 100%; }
