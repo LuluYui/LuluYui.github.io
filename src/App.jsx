@@ -9,7 +9,7 @@ import About from './About.jsx'
 function Home() {
   return (
 
-      <div className="font-creato home flex h-dvh flex-col items-center justify-center gap-8 text-start">
+      <div className="font-creato home bg-[url(/src/assets/images/mountain.jpg)] flex h-dvh flex-col items-center justify-center gap-8 text-start">
           <p className="text-3xl text-shadow-lg text-white"> Hi, I'M CHRIS </p> 
           <p className="font-creato-light text-white text-shadow-lg"> Software Developer & Geomatics Specialist </p>
       </div>

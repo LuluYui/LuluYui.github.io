@@ -6,10 +6,9 @@ import tailwindcss from  '@tailwindcss/vite'
 export default defineConfig({
   server: {
     watch: {
-      port: 5173, // Default Vite port
       usePolling: true,
       interval: 1000,
-      ignored: ['!**/src/**/*.{js,ts,jsx,tsx}'],
+      ignored: ['!**/src/**/**/*.{js,ts,jsx,tsx}'],
     },
   },
   optimizeDeps: {
