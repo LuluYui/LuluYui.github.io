@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@tailwind utilities;
+
 @font-face {
   font-family: Creato;
   font-style: normal;
@@ -14,8 +17,6 @@
   src: url("/src/assets/fonts/creato_display/CreatoDisplay-Light.otf") format("opentype");
 }
 
-@import "tailwindcss";
-@tailwind utilities;
 
 @utility scrollbar-hidden {  
   scrollbar-width: none; /* For Firefox */
@@ -87,9 +88,6 @@ body {
   color: #434343;
 }
 
-.dark .btn:hover {
-  color: #e2e8f0;
-}
 
 .btn::after {
   content: '';
@@ -104,8 +102,12 @@ body {
   transition: transform 0.20s ease-out;
 }
 
+.dark .btn:hover {
+  color: #5ee9b5;
+}
+
 .dark .btn::after {
-  background-color: #ffffff;
+    background-color:#5ee9b5;
 }
 
 .btn:hover::after{

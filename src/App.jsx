@@ -51,16 +51,16 @@ function App() {
         <div id="about" className="h-dvh snap-start snap-normal ">
           <About />
         </div>
-        <div className="snap-start snap-normal min-h-dvh flex items-center justify-center py-16 sm:py-24">
+        <div id="skills" className="snap-start snap-normal min-h-dvh flex items-center justify-center py-16 sm:py-24">
           <Skills /> 
         </div>
-        <div className="snap-start snap-normal min-h-dvh flex items-center justify-center py-16 sm:py-24">
+          <div id="timeline" className="snap-start snap-normal min-h-dvh flex items-center justify-center py-16 sm:py-24">
           <ExperienceTimeline />
         </div>
-        <div className="snap-start snap-normal min-h-dvh flex items-center justify-center py-16 sm:py-24">
+        <div id="education" className="snap-start snap-normal min-h-dvh flex items-center justify-center py-16 sm:py-24">
           <Education />
         </div>
-        <div className="snap-end flex items-center justify-center">
+        <div id="footer" className="snap-end flex items-center justify-center">
           <Footer />
         </div>
       </div>

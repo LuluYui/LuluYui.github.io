@@ -13,10 +13,10 @@ export default function MenuBar() {
           <h1> Chris Yip</h1>
         </a>
         <div className="flex items-center gap-6 text-xl pr-4">
-            <button className="btn"> About me </button>
-            <button className="btn"> Resume  </button>
-            <button className="btn"> Projects </button>
-            <button className="btn"> Books </button>
+            <a className="btn" href="#about"> About me </a>
+            <a className="btn" href="#timeline" > Resume  </a>
+            <a className="btn" href="#education"> Projects </a>
+            <a className="btn" href="#footer"> Books </a>
             <button id="dark-mode-btn" className="dark-border flex h-10 w-10 items-center justify-center rounded-full border border-transparent" onClick={toggleDarkMode}>
                 <img className="dark-btn h-8 w-8" src={darkMode ? sun : moon} alt="Dark mode toggle icon" />
             </button>

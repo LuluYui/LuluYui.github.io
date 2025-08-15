@@ -26,10 +26,11 @@ export default function Skills() {
         {skillsData.map((skill) => (
           <img
             key={skill.name}
-            className="w-16 transition-all duration-300 grayscale hover:grayscale-0 hover:scale-110"
+            className="w-16 transition-all duration-300 grayscale active:grayscale-0 hover:grayscale-0 hover:scale-110"
             src={skill.logo}
             alt={skill.alt}
             title={skill.name}
+            onContextMenu={(e) => e.preventDefault()}
           />
         ))}
       </div>
