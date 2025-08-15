@@ -41,14 +41,14 @@ function Education() {
 function App() {
 
   return (
-    <div className="font-creato h-dvh flex flex-col">
+    <div className="font-creato h-lvh flex flex-col">
       {/* <Demo />  -- Game or animations of some sort */}
         <MenuBar />
       <div className="relative scroll-smooth flex-grow snap-y snap-proximity overflow-y-auto scrollbar-hidden">
         <div id="home" className="h-dvh snap-start snap-normal ">
           <Home />
         </div>
-        <div id="about" className="h-dvh snap-start snap-normal ">
+        <div id="about" className="min-h-dvh snap-start snap-normal flex items-center justify-center">
           <About />
         </div>
         <div id="skills" className="snap-start snap-normal min-h-dvh flex items-center justify-center py-16 sm:py-24">

@@ -7,8 +7,8 @@ export default function About() {
   const [darkMode] = useDarkMode();
   
   return (
-      <div className="font-creato about flex h-dvh flex-col items-center justify-center gap-8 text-center">
-        <img id="profile_icon" className="icon h-55 rounded-4xl" src={profileIcon} alt="ICON" />
+      <div className="font-creato about flex flex-col items-center justify-center gap-8 text-center py-16 sm:py-24">
+        <img id="profile_icon" className="icon h-40 sm:h-52 rounded-4xl" src={profileIcon} alt="A personal icon of Chris" />
         <h1>Hi, My Name is Chris</h1>
           <div className="max-w-2xl px-4">
             <h3> "Impossible is not a fact. It's an opinion. Impossible is not a declaration. It's a dare. Impossible is potential. Impossible is temporary. Impossible is nothing.” </h3>
