@@ -1,6 +1,6 @@
+import PolyU_Logo from './assets/svgs/PolyU-Logo.svg'
 import ExperienceTimeline from './ExperienceTimeline.jsx'
 import Footer from './Footer.jsx'
-import Education from './Education.jsx'
 import './App.css'
 import Skills from './Skills.jsx'
 import MenuBar from './MenuBar.jsx'
@@ -8,6 +8,7 @@ import About from './About.jsx'
 
 function Home() {
   return (
+
       <div className="font-creato home bg-[url(/src/assets/images/mountain.jpg)] flex h-dvh flex-col items-center justify-center gap-8 text-start">
           <p className="text-3xl text-shadow-lg text-white"> Hi, I'M CHRIS </p> 
           <p className="font-creato-light text-white text-shadow-lg"> Software Developer & Geomatics Specialist </p>
@@ -15,10 +16,28 @@ function Home() {
   );
 }
 
-/* MISSING: 
-    1. Get a copy of resume
-    2. Projects sections (Keep building the projects from scratch, there is nothing to prove.)
-    */
+
+function Education() {
+  return(
+    <div className="container font-creato">
+      <h1 className="text-4xl font-bold py-3">Education</h1>
+      <hr />
+      <img className="h-18" src={PolyU_Logo} alt="HKPolyU Logo"/> 
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-3 gap-2">
+        <h1 className="italic text-2xl"> The Hong Kong Polytechnic University</h1>
+        <h2 className="flex-shrink-0">Graduated at 30 September 2021 </h2>
+      </div>
+      <p className="px-1">Bachelor of Science, specialized in Geo-Informatics</p>
+
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-3 gap-2 mt-4">
+        <h1 className="italic text-2xl">RMIT University, Melbourne, Australia </h1>
+        <h2 className="flex-shrink-0"> February - June 2019 </h2>
+      </div>
+      <p className="px-1"> Study Abroad Program in Surveying and Geospatial Science </p>
+    </div>
+  );
+}
+
 function App() {
 
   return (

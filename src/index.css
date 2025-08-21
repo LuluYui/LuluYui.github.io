@@ -17,6 +17,13 @@
   src: url("/src/assets/fonts/creato_display/CreatoDisplay-Light.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Creato-Extrabold;
+  font-style: normal;
+  font-weight: 800; /* 'Light' is typically weight 300 */
+  font-display: swap;
+  src: url("/src/assets/fonts/creato_display/CreatoDisplay-ExtraBold.otf") format("opentype");
+}
 
 @utility scrollbar-hidden {  
   scrollbar-width: none; /* For Firefox */
@@ -40,12 +47,13 @@
 @theme {
   --font-creato: Creato, "sans-serif";
   --font-creato-light: Creato-Light, "sans-serif";
+  --font-creato-extrabold: Creato-Extrabold, "sans-serif";
 }
 
 
 :root {
   font-family: Creato, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 2.5;
+  line-height: 1.625;
   font-weight: 400;
 
   /* Light mode by default */
@@ -134,17 +142,8 @@ body {
   border-color: currentColor;
 }
 
-h1 {
-  font-size: 1.5em;
-  line-height: 1.3;
-}
-
 .home {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-p {
-  line-height: 1.625;
 }
