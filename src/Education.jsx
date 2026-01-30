@@ -6,7 +6,7 @@ export default function Education() {
       <h1 className="text-4xl font-bold py-3">Education</h1>
       <hr />
       <img className="h-18" src={PolyU_Logo} alt="HKPolyU Logo"/> 
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-3 gap-2 mt-4">
         <h1 className="italic text-2xl">The Hong Kong Polytechnic University</h1>
         <h2 className="flex-shrink-0">Graduated at 30 September 2021 </h2>
       </div>

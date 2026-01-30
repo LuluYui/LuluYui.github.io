@@ -36,7 +36,7 @@ export default function MenuBar() {
             <a className="btn" href="#about"> About me </a>
             <a className="btn" href="#timeline" > Resume  </a>
             <a className="btn" href="#education"> Projects </a>
-            <a className="btn" href="#footer"> Books </a>
+            <a className="btn" href="#footer"> Study </a>
             <button id="dark-mode-btn" className="dark-border flex h-10 w-10 items-center justify-center rounded-full border border-transparent" onClick={toggleDarkMode}>
                 <img className="dark-btn h-8 w-8" src={darkMode ? sun : moon} alt="Dark mode toggle icon" />
             </button>
