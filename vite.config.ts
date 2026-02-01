@@ -5,13 +5,14 @@ import tailwindcss from  '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   server: {
-    watch: {
-      usePolling: true,
-      interval: 1000,
-      ignored: ['!**/src/**/**/*.{js,ts,jsx,tsx}'],
-    },
-  },
-  optimizeDeps: {
+        watch: {
+          usePolling: true,
+          interval: 1000,
+          ignored: ['!**/src/**/**/*.{js,ts,jsx,tsx}'],
+        },
+        host: '0.0.0.0', // Force IPv4
+        port: 5174,      // Set fixed port
+      },  optimizeDeps: {
     exclude: ['@tailwindcss/vite'],
     force: true,
   },

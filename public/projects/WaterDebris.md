@@ -1,11 +1,24 @@
+---
+id: 'WaterDebris'
+title: 'Water Debris Detection'
+description: 'A computer vision project to detect debris in water bodies using drone imagery.'
+coverImage: '/projects/WaterDebris/DJI_20250721174213_0004_1_1.jpg'
+tags: ['Python', 'Computer Vision', 'Deep Learning']
+category: 'AI & Computer Vision'
+date: '2025-07-21'
+---
+
 # Water Debris Detection
 
 ## Overview
 This project focuses on detecting water debris using computer vision. Below are the results from our prediction model.
 
-Location: Aberdeen Reservoirs
+Location: Kowloon Reservoirs
 
 ## Prediction Results
+
+![Accuracy / epoch]
+![loss / epoch]
 
 ### Debris Detection
 Here are some examples of the model detecting debris in water bodies.

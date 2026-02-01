@@ -13,7 +13,11 @@ function ProjectDetail() {
         if (res.ok) return res.text();
         throw new Error('Project not found');
       })
-      .then((text) => setContent(text))
+      .then((text) => {
+        // Remove YAML front matter (content between --- and --- at the start)
+        const contentWithoutFrontMatter = text.replace(/^---[\s\S]*?---\n/, '');
+        setContent(contentWithoutFrontMatter);
+      })
       .catch((err) => setContent(`# Error\n\nCould not load project: ${err.message}`));
   }, [id]);
 
