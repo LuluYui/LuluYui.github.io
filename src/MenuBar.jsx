@@ -33,10 +33,11 @@ export default function MenuBar() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-6 text-xl">
-            <a className="btn" href="#about"> About me </a>
-            <a className="btn" href="#timeline" > Resume  </a>
-            <a className="btn" href="#education"> Projects </a>
-            <a className="btn" href="#footer"> Study </a>
+            <a className="btn" href="#about"> About </a>
+            <a className="btn" href="#skills"> Skills </a>
+            <a className="btn" href="#projects"> Projects </a>
+            <a className="btn" href="#timeline" > Experience  </a>
+            <a className="btn" href="#education"> Education </a>
             <button id="dark-mode-btn" className="dark-border flex h-10 w-10 items-center justify-center rounded-full border border-transparent" onClick={toggleDarkMode}>
                 <img className="dark-btn h-8 w-8" src={darkMode ? sun : moon} alt="Dark mode toggle icon" />
             </button>
@@ -59,10 +60,11 @@ export default function MenuBar() {
       {/* Mobile Menu Overlay */}
       <div className={`fixed mt-12 h-fit inset-0 z-50 bg-white/5 dark:bg-black/50 backdrop-blur-sm transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-500 ease-in-out md:hidden`}>
         <nav className="flex flex-col items-center justify-start h-full gap-8 text-2xl py-10 ">
-            <a className="btn" href="#about" onClick={closeMenu}> About me </a>
-            <a className="btn" href="#timeline" onClick={closeMenu}> Resume </a>
-            <a className="btn" href="#education" onClick={closeMenu}> Projects </a>
-            <a className="btn" href="#footer" onClick={closeMenu}> Books </a>
+            <a className="btn" href="#about" onClick={closeMenu}> About </a>
+            <a className="btn" href="#skills" onClick={closeMenu}> Skills </a>
+            <a className="btn" href="#projects" onClick={closeMenu}> Projects </a>
+            <a className="btn" href="#timeline" onClick={closeMenu}> Experience </a>
+            <a className="btn" href="#education" onClick={closeMenu}> Education </a>
         </nav>
       </div>
     </>

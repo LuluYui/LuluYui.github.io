@@ -1,69 +1,80 @@
-# React + TypeScript + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for my personal portfolio website. This project serves as a comprehensive digital resume, showcasing my professional experience, education, skills, and detailed project case studies. It is designed to be a fast, responsive, and visually engaging way to present my background to potential employers and collaborators.
 
-Currently, two official plugins are available:
+## 🚀 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application is a Single Page Application (SPA) built with modern web technologies. It dynamically renders content, including parsing Markdown files for project descriptions, to provide a seamless browsing experience.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend Framework:** [React 19](https://react.dev/)
+- **Build Tool:** [Vite 7](https://vitejs.dev/) - Ensuring fast development and optimized builds.
+- **Language:** TypeScript & JavaScript (JSX)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/) - For utility-first, responsive design.
+- **Routing:** [React Router DOM](https://reactrouter.com/)
+- **Content Rendering:** `react-markdown` & `remark-gfm` - Used to render project case studies directly from Markdown files.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📂 Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+The codebase is organized as follows:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+/
+├── public/                 # Static assets
+│   ├── images/             # Profile pictures and background images
+│   ├── svgs/               # Icons for skills and social links
+│   └── projects/           # Markdown files containing project details
+│       └── ...             # e.g., WaterDebris.md
+├── src/                    # Source code
+│   ├── assets/             # Bundled assets (fonts)
+│   ├── components/         # (Implicit in current structure)
+│   ├── About.jsx           # About Me section
+│   ├── App.jsx             # Main application layout and routing
+│   ├── Education.jsx       # Education history display
+│   ├── ExperienceTimeline.jsx # Interactive timeline of work experience
+│   ├── Header.jsx          # Navigation header
+│   ├── HomePage.jsx        # Landing page
+│   ├── Projects.jsx        # Grid view of projects
+│   ├── ProjectDetail.jsx   # Dynamic view for individual project markdown files
+│   ├── Skills.jsx          # Skill icons grid
+│   └── main.tsx            # Application entry point
+├── package.json            # Dependencies and scripts
+└── ...config files         # Vite, TypeScript, ESLint configurations
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Key Components
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Project System:** Projects are stored as Markdown files in `public/projects/`. The `ProjectDetail` component fetches these files and renders them, allowing for easy content updates without code changes.
+- **Experience Timeline:** A visual representation of my professional history.
+- **Responsive Design:** The layout adjusts automatically for mobile, tablet, and desktop screens using Tailwind CSS.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 💻 Getting Started
+
+To run this project locally, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd portfolio-Chris
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    The site will be available at `http://localhost:5173` (or similar).
+
+4.  **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
