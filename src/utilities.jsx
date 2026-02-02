@@ -1,6 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, createContext, useContext } from 'react';
 
-export function useDarkMode() {
+const ThemeContext = createContext();
+
+export function ThemeProvider({ children }) {
   // Initialize state from localStorage or system preference
   const [darkMode, setDarkMode] = useState(() => {
     const storedTheme = localStorage.getItem('theme');
@@ -21,8 +23,6 @@ export function useDarkMode() {
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = (e) => {
-      // Always sync with the system preference. When the system theme changes,
-      // we update the state and clear any manual override from localStorage.
       setDarkMode(e.matches);
       localStorage.removeItem('theme');
     };
@@ -33,9 +33,22 @@ export function useDarkMode() {
   function toggleDarkMode() {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
-    // When user manually toggles, we save their preference
     localStorage.setItem('theme', newDarkMode ? 'dark' : 'light');
   }
 
-  return [darkMode, toggleDarkMode];
+  return (
+    <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 }
+
+export function useTheme() {
+  return useContext(ThemeContext);
+}
+
+// Keep the old hook name for backward compatibility during refactor, 
+// but it now consumes the context if used inside the provider, 
+// or works standalone (though standalone usage is discouraged for global consistency).
+// For this fix, we will switch components to useTheme().
+

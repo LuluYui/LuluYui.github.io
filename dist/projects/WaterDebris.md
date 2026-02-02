@@ -1,9 +1,28 @@
-# Water Debris Detection
+---
+id: 'WaterDebris'
+title: 'Water Debris Detection'
+description: 'A computer vision project to detect debris in water bodies using drone imagery.'
+coverImage: '/projects/WaterDebris/DJI_20250721174213_0004_1_1.jpg'
+tags: ['Python', 'Computer Vision', 'Deep Learning']
+category: 'AI & Computer Vision'
+date: '2025-07-21'
+---
+
+# Detecting debris for cleaner reserviors 
+
+21 July, 2021
+___
+
 
 ## Overview
 This project focuses on detecting water debris using computer vision. Below are the results from our prediction model.
 
+Location: Kowloon Reservoirs
+
 ## Prediction Results
+
+![Accuracy / epoch]
+![loss / epoch]
 
 ### Debris Detection
 Here are some examples of the model detecting debris in water bodies.
@@ -20,8 +39,16 @@ We also analyze false positives (FP) to improve the model.
 ## Technical Details
 - **Model:** [Model Name/Type]
 - **Framework:** [PyTorch/TensorFlow]
-- **Dataset:** collected via DJI drones.
+- **Dataset:** DJI Mavic 3 Pro Aerial Imagery, 
 
 ## Future Work
 - Improve accuracy on small objects.
 - Expand dataset to include more diverse water conditions.
+
+___
+
+## Data Source & Acknowledgements
+###### The model was trained using the **FloW-Img** dataset. We utilized the training set available at FigShare, which was originally collected and annotated by **Guangchao Qiao, Mingxiang Yang, and Hao Wang**.
+
+
+###### [ Qiao, G., Yang, M. & Wang, H. An annotated Dataset and Benchmark for Detecting Floating Debris in Inland Waters. *Sci Data* **12**, 385 (2025). ](https://doi.org/10.1038/s41597-025-04594-9)

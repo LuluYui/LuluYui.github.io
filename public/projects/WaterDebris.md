@@ -8,7 +8,11 @@ category: 'AI & Computer Vision'
 date: '2025-07-21'
 ---
 
-# Water Debris Detection
+# Detecting debris for cleaner reserviors 
+
+21 July, 2021
+___
+
 
 ## Overview
 This project focuses on detecting water debris using computer vision. Below are the results from our prediction model.

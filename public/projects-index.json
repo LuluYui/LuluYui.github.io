@@ -1,0 +1,16 @@
+[
+  {
+    "id": "WaterDebris",
+    "title": "Water Debris Detection",
+    "description": "A computer vision project to detect debris in water bodies using drone imagery.",
+    "coverImage": "/projects/WaterDebris/DJI_20250721174213_0004_1_1.jpg",
+    "tags": [
+      "Python",
+      "Computer Vision",
+      "Deep Learning"
+    ],
+    "category": "AI & Computer Vision",
+    "date": "2025-07-21",
+    "source": "/projects/WaterDebris.md"
+  }
+]
