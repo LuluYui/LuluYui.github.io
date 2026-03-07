@@ -3,22 +3,26 @@ import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
+import waterDebrisMd from './projects/WaterDebris.md?raw';
+import bimDigitalTwinMd from './projects/BIMDigitalTwin.md?raw';
+
+const projectMarkdown = {
+  'WaterDebris': waterDebrisMd,
+  'BIMDigitalTwin': bimDigitalTwinMd,
+};
+
 function ProjectDetail() {
   const { id } = useParams();
   const [content, setContent] = useState('');
 
   useEffect(() => {
-    fetch(`/public/projects/${id}.md`)
-      .then((res) => {
-        if (res.ok) return res.text();
-        throw new Error('Project not found');
-      })
-      .then((text) => {
-        // Remove YAML front matter (content between --- and --- at the start)
-        const contentWithoutFrontMatter = text.replace(/^---[\s\S]*?---\n/, '');
-        setContent(contentWithoutFrontMatter);
-      })
-      .catch((err) => setContent(`# Error\n\nCould not load project: ${err.message}`));
+    const markdown = projectMarkdown[id];
+    if (markdown) {
+      const contentWithoutFrontMatter = markdown.replace(/^---[\s\S]*?---\n/, '');
+      setContent(contentWithoutFrontMatter);
+    } else {
+      setContent('# Error\n\nCould not load project: Project not found');
+    }
   }, [id]);
 
   return (

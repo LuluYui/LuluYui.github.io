@@ -12,5 +12,21 @@
     "category": "AI & Computer Vision",
     "date": "2025-07-21",
     "source": "/projects/WaterDebris.md"
+  },
+  {
+    "id": "BIMDigitalTwin",
+    "title": "BIM Digital Twin with DMA/PMA Analytics",
+    "description": "A 3D Building Information Modeling digital twin for water network visualization with real-time IoT sensor analytics.",
+    "coverImage": "/projects/scada-screenshot.png",
+    "tags": [
+      "TypeScript",
+      "Three.js",
+      "ThatOpen",
+      "IoT",
+      "BIM"
+    ],
+    "category": "3D Visualization & IoT",
+    "date": "2025-03-07",
+    "source": "/projects/BIMDigitalTwin.md"
   }
 ]
