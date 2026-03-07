@@ -152,18 +152,12 @@ category: '3D Visualization & IoT'
 date: '2025-03-07'
 ---
 
+[![View Live Demo](https://img.shields.io/badge/🚀_View_Live_Demo-0速率-25D366?style=for-the-badge&logo=vercel)](https://waterleakgisplatform.vercel.app/#Viewer)
+
 # Bringing Water Networks to Life in 3D 🎯
 
 March 7, 2025
 ___
-
-## 🔗 Live Demo
-
-**[👉 Try it yourself - Water Leak GIS Platform](https://waterleakgisplatform.vercel.app/#Viewer)**
-
-Click the link above to see the 3D BIM viewer with real-time IoT analytics in action!
-
----
 
 ## Overview
 
