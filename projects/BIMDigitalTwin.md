@@ -20,8 +20,6 @@ ___
 
 This project transforms traditional water network management from boring spreadsheets into an interactive 3D experience that would enable faster, enjoyable and fun analytics experience for engineers and professionals.
 
-![BIM Digital Twin Dashboard](/projects/scada-screenshot.png "The 3D BIM Viewer with IoT Analytics Dashboard")
-
 ## The Problem (Why This Matters)
 
 Water distribution network management has traditionally relied on expensive proprietary software from major vendors such as **Supermaps** and **ESRI**. These solutions impose significant licensing costs and restrict customization, limiting organizations' ability to adapt the technology to their specific operational requirements.
