@@ -18,7 +18,7 @@ ___
 
 ## Overview
 
-Ever wondered what happens when you combine **Building Information Modeling (BIM)**, **real-time IoT sensors**, and a dash of digital twin magic? Well, wonder no more! This project transforms traditional water network management from boring spreadsheets into an interactive 3D experience that would make even James Bond's Q impressed.
+This project transforms traditional water network management from boring spreadsheets into an interactive 3D experience that would enable faster, enjoyable and fun analytics experience for engineers and professionals.
 
 ![BIM Digital Twin Dashboard](/projects/scada-screenshot.png "The 3D BIM Viewer with IoT Analytics Dashboard")
 
@@ -26,7 +26,7 @@ Ever wondered what happens when you combine **Building Information Modeling (BIM
 
 Water distribution network management has traditionally relied on expensive proprietary software from major vendors such as **Supermaps** and **ESRI**. These solutions impose significant licensing costs and restrict customization, limiting organizations' ability to adapt the technology to their specific operational requirements.
 
-This project presents an alternative approach: a digital twin built entirely on **open-source technology** using **ThatOpen** - a framework dedicated to providing accessible BIM tools without vendor lock-in. The solution enables organizations to view, analyze, and manage water network infrastructure in 3D without the constraints of proprietary licensing.
+This project presents an alternative approach: a digital twin built entirely on **open-source technology** using **ifc.js** - a framework dedicated to providing accessible BIM tools without vendor lock-in. The solution enables organizations to view, analyze, and manage water network infrastructure in 3D without the constraints of proprietary licensing.
 
 ## Key Features
 
@@ -116,27 +116,6 @@ The project is built with extensibility in mind. Potential future features inclu
 - **Machine Learning**: Predictive leak detection using historical patterns
 - **Multi-User Collaboration**: Multiple engineers working on the same model simultaneously
 - **Mobile App**: Field technicians accessing the system on tablets
-
-## Why This Project Stands Out
-
-> "In the world of water management, this isn't just another pretty 3D viewer - it's a practical tool that bridges the gap between complex infrastructure data and actionable insights."
-
-This project demonstrates:
-- ✅ Full-stack development capabilities (TypeScript frontend + Node.js backend)
-- ✅ Integration with industrial IoT systems
-- ✅ 3D graphics and visualization expertise
-- ✅ Understanding of real-world engineering challenges
-- ✅ Ability to translate complex technical requirements into user-friendly solutions
-
-## Lessons Learned
-
-Building this digital twin taught us:
-1. **Performance matters**: Rendering large IFC files requires clever optimization (fragments, progressive loading)
-2. **Data quality is crucial**: IoT analytics are only as good as the underlying data
-3. **User experience wins**: Even the most powerful tool is useless if nobody can figure out how to use it
-4. **Open source rocks**: The ThatOpen community provided incredible support and resources
-
----
 
 ## Technical Specifications
 
