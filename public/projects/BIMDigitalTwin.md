@@ -2,7 +2,8 @@
 id: 'BIMDigitalTwin'
 title: 'BIM Digital Twin with DMA/PMA Analytics'
 description: 'A 3D Building Information Modeling digital twin for water network visualization with real-time IoT sensor analytics.'
-coverImage: '/projects/scada-screenshot.png'
+coverImage: '/projects/BIMDigitalTwin/DMA_PMA.png'
+previewUrl: 'https://waterleakgisplatform.vercel.app/#Viewer'
 tags: ['TypeScript', 'Three.js', 'ThatOpen', 'IoT', 'BIM']
 category: '3D Visualization & IoT'
 date: '2025-03-07'
@@ -23,17 +24,19 @@ Ever wondered what happens when you combine **Building Information Modeling (BIM
 
 ## The Problem (Why This Matters)
 
-Water distribution networks are the unsung heroes of modern civilization - they quietly deliver clean water to our taps while we binge-watch Netflix. But here's the kicker: managing these networks has traditionally been... let's say, *not exciting*. Engineers had to juggle paper maps, static databases, and enough Excel sheets to make Excel itself say "please stop."
+Water distribution network management has traditionally relied on expensive proprietary software from major vendors such as **Supermaps** and **ESRI**. These solutions impose significant licensing costs and restrict customization, limiting organizations' ability to adapt the technology to their specific operational requirements.
 
-Our solution? A digital twin that shows the entire water network in stunning 3D, complete with live data from flow meters and pressure sensors. Think of it as Google Maps, but for underground water pipes - with superpowers.
+This project presents an alternative approach: a digital twin built entirely on **open-source technology** using **ThatOpen** - a framework dedicated to providing accessible BIM tools without vendor lock-in. The solution enables organizations to view, analyze, and manage water network infrastructure in 3D without the constraints of proprietary licensing.
 
 ## Key Features
 
 ### 🗺️ Interactive 3D BIM Model Viewer
-Powered by **ThatOpen** (the rockstars of open-source BIM on the web), this viewer lets you:
+Powered by **ThatOpen**, this viewer enables users to:
 - Rotate, pan, and zoom through complex water network models
 - Select and inspect individual pipe segments and infrastructure
 - Visualize the entire DMA (District Metered Area) and PMA (Pressure Management Area) layout
+
+![3D BIM Viewer](/projects/BIMDigitalTwin/viewer.png "Interactive 3D BIM Model Viewer")
 
 ### 📊 Real-Time IoT Analytics Dashboard
 Because seeing is believing, and data is king:
@@ -41,6 +44,8 @@ Because seeing is believing, and data is king:
 - **Pressure Monitoring**: Keep tabs on pressure levels in BAR
 - **Leak Detection**: Automated anomaly detection using Min Night Flow analysis
 - **Historical Trends**: Track patterns over time with beautiful Chart.js visualizations
+
+![IoT Analytics Dashboard](/projects/BIMDigitalTwin/explore_filters.png "Real-Time IoT Analytics with Flow and Pressure Monitoring")
 
 ### 📏 Measurement Tools
 Need to know how long that pipe segment is? No problem! The app includes:

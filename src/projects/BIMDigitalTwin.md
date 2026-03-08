@@ -8,29 +8,32 @@ category: '3D Visualization & IoT'
 date: '2025-03-07'
 ---
 
-[![View Live Demo](https://img.shields.io/badge/🚀_View_Live_Demo-0速率-25D366?style=for-the-badge&logo=vercel)](https://waterleakgisplatform.vercel.app/#Viewer)
 
-# Bringing Water Networks to Life in 3D 🎯
+
+# 3D Water Utility Management Platform 
+#### Built with ifc.js by thatopen company
 
 March 7, 2025
 ___
 
 ## Overview
 
-Ever wondered what happens when you combine **Building Information Modeling (BIM)**, **real-time IoT sensors**, and a dash of digital twin magic? Well, wonder no more! This project transforms traditional water network management from boring spreadsheets into an interactive 3D experience that would make even James Bond's Q impressed.
+This project transforms traditional water network management from boring spreadsheets into an interactive 3D experience that would enable faster, enjoyable and fun analytics experience for engineers and professionals. 
 
-![BIM Digital Twin Dashboard](/projects/scada-screenshot.png "The 3D BIM Viewer with IoT Analytics Dashboard")
+![BIM Digital Twin Dashboard](/src/projects/BIMDigitalTwin/viewer.png "3D & IoT Analytics Dashboard")
+[![View Live Demo](https://img.shields.io/badge/🚀_View_Live_Demo-25D366?style=for-the-badge&logo=vercel)](https://waterleakgisplatform.vercel.app/#Viewer)
+
 
 ## The Problem (Why This Matters)
 
-Water distribution networks are the unsung heroes of modern civilization - they quietly deliver clean water to our taps while we binge-watch Netflix. But here's the kicker: managing these networks has traditionally been... let's say, *not exciting*. Engineers had to juggle paper maps, static databases, and enough Excel sheets to make Excel itself say "please stop."
+Water distribution network management has traditionally relied on expensive proprietary software from major vendors such as **Supermaps** and **ESRI**. These solutions impose significant licensing costs and restrict customization, limiting organizations' ability to adapt the technology to their specific operational requirements.
 
-Our solution? A digital twin that shows the entire water network in stunning 3D, complete with live data from flow meters and pressure sensors. Think of it as Google Maps, but for underground water pipes - with superpowers.
+This project presents an alternative approach: a digital twin built entirely on **open-source technology** using **ifc.js** - a framework dedicated to providing accessible BIM tools without vendor lock-in. The solution enables organizations to view, analyze, and manage water network infrastructure in 3D without the constraints of proprietary licensing.
 
 ## Key Features
 
 ### 🗺️ Interactive 3D BIM Model Viewer
-Powered by **ThatOpen** (the rockstars of open-source BIM on the web), this viewer lets you:
+Powered by **ThatOpen**, this viewer enables users to:
 - Rotate, pan, and zoom through complex water network models
 - Select and inspect individual pipe segments and infrastructure
 - Visualize the entire DMA (District Metered Area) and PMA (Pressure Management Area) layout
@@ -111,17 +114,6 @@ The project is built with extensibility in mind. Potential future features inclu
 - **Machine Learning**: Predictive leak detection using historical patterns
 - **Multi-User Collaboration**: Multiple engineers working on the same model simultaneously
 - **Mobile App**: Field technicians accessing the system on tablets
-
-## Why This Project Stands Out
-
-> "In the world of water management, this isn't just another pretty 3D viewer - it's a practical tool that bridges the gap between complex infrastructure data and actionable insights."
-
-This project demonstrates:
-- ✅ Full-stack development capabilities (TypeScript frontend + Node.js backend)
-- ✅ Integration with industrial IoT systems
-- ✅ 3D graphics and visualization expertise
-- ✅ Understanding of real-world engineering challenges
-- ✅ Ability to translate complex technical requirements into user-friendly solutions
 
 ## Lessons Learned
 
