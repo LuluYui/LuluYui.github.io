@@ -2,7 +2,7 @@
 id: 'BIMDigitalTwin'
 title: 'BIM Digital Twin with DMA/PMA Analytics'
 description: 'A 3D Building Information Modeling digital twin for water network visualization with real-time IoT sensor analytics.'
-coverImage: '/projects/scada-screenshot.png'
+coverImage: '/projects/BIMDigitalTwin/DMA_PMA.png'
 tags: ['TypeScript', 'Three.js', 'ThatOpen', 'IoT', 'BIM']
 category: '3D Visualization & IoT'
 date: '2025-03-07'
@@ -20,7 +20,7 @@ ___
 
 This project transforms traditional water network management from boring spreadsheets into an interactive 3D experience that would enable faster, enjoyable and fun analytics experience for engineers and professionals. 
 
-![BIM Digital Twin Dashboard](/src/projects/BIMDigitalTwin/viewer.png "3D & IoT Analytics Dashboard")
+![BIM Digital Twin Dashboard](/projects/BIMDigitalTwin/viewer.png "3D & IoT Analytics Dashboard")
 [![View Live Demo](https://img.shields.io/badge/🚀_View_Live_Demo-25D366?style=for-the-badge&logo=vercel)](https://waterleakgisplatform.vercel.app/#Viewer)
 
 
