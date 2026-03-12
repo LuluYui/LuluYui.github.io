@@ -2,7 +2,8 @@
 id: 'BIMDigitalTwin'
 title: 'BIM Digital Twin with DMA/PMA Analytics'
 description: 'A 3D Building Information Modeling digital twin for water network visualization with real-time IoT sensor analytics.'
-coverImage: '/projects/scada-screenshot.png'
+coverImage: '/projects/BIMDigitalTwin/DMA_PMA.png'
+previewUrl: 'https://waterleakgisplatform.vercel.app/#Viewer'
 tags: ['TypeScript', 'Three.js', 'ThatOpen', 'IoT', 'BIM']
 category: '3D Visualization & IoT'
 date: '2025-03-07'
@@ -17,23 +18,23 @@ ___
 
 ## Overview
 
-Ever wondered what happens when you combine **Building Information Modeling (BIM)**, **real-time IoT sensors**, and a dash of digital twin magic? Well, wonder no more! This project transforms traditional water network management from boring spreadsheets into an interactive 3D experience that would make even James Bond's Q impressed.
-
-![BIM Digital Twin Dashboard](/projects/scada-screenshot.png "The 3D BIM Viewer with IoT Analytics Dashboard")
+This project transforms traditional water network management from boring spreadsheets into an interactive 3D experience that would enable faster, enjoyable and fun analytics experience for engineers and professionals.
 
 ## The Problem (Why This Matters)
 
-Water distribution networks are the unsung heroes of modern civilization - they quietly deliver clean water to our taps while we binge-watch Netflix. But here's the kicker: managing these networks has traditionally been... let's say, *not exciting*. Engineers had to juggle paper maps, static databases, and enough Excel sheets to make Excel itself say "please stop."
+Water distribution network management has traditionally relied on expensive proprietary software from major vendors such as **Supermaps** and **ESRI**. These solutions impose significant licensing costs and restrict customization, limiting organizations' ability to adapt the technology to their specific operational requirements.
 
-Our solution? A digital twin that shows the entire water network in stunning 3D, complete with live data from flow meters and pressure sensors. Think of it as Google Maps, but for underground water pipes - with superpowers.
+This project presents an alternative approach: a digital twin built entirely on **open-source technology** using **ifc.js** - a framework dedicated to providing accessible BIM tools without vendor lock-in. The solution enables organizations to view, analyze, and manage water network infrastructure in 3D without the constraints of proprietary licensing.
 
 ## Key Features
 
 ### 🗺️ Interactive 3D BIM Model Viewer
-Powered by **ThatOpen** (the rockstars of open-source BIM on the web), this viewer lets you:
+Powered by **ThatOpen**, this viewer enables users to:
 - Rotate, pan, and zoom through complex water network models
 - Select and inspect individual pipe segments and infrastructure
 - Visualize the entire DMA (District Metered Area) and PMA (Pressure Management Area) layout
+
+![3D BIM Viewer](/projects/BIMDigitalTwin/viewer.png "Interactive 3D BIM Model Viewer")
 
 ### 📊 Real-Time IoT Analytics Dashboard
 Because seeing is believing, and data is king:
@@ -41,6 +42,8 @@ Because seeing is believing, and data is king:
 - **Pressure Monitoring**: Keep tabs on pressure levels in BAR
 - **Leak Detection**: Automated anomaly detection using Min Night Flow analysis
 - **Historical Trends**: Track patterns over time with beautiful Chart.js visualizations
+
+![IoT Analytics Dashboard](/projects/BIMDigitalTwin/explore_filters.png "Real-Time IoT Analytics with Flow and Pressure Monitoring")
 
 ### 📏 Measurement Tools
 Need to know how long that pipe segment is? No problem! The app includes:
@@ -111,27 +114,6 @@ The project is built with extensibility in mind. Potential future features inclu
 - **Machine Learning**: Predictive leak detection using historical patterns
 - **Multi-User Collaboration**: Multiple engineers working on the same model simultaneously
 - **Mobile App**: Field technicians accessing the system on tablets
-
-## Why This Project Stands Out
-
-> "In the world of water management, this isn't just another pretty 3D viewer - it's a practical tool that bridges the gap between complex infrastructure data and actionable insights."
-
-This project demonstrates:
-- ✅ Full-stack development capabilities (TypeScript frontend + Node.js backend)
-- ✅ Integration with industrial IoT systems
-- ✅ 3D graphics and visualization expertise
-- ✅ Understanding of real-world engineering challenges
-- ✅ Ability to translate complex technical requirements into user-friendly solutions
-
-## Lessons Learned
-
-Building this digital twin taught us:
-1. **Performance matters**: Rendering large IFC files requires clever optimization (fragments, progressive loading)
-2. **Data quality is crucial**: IoT analytics are only as good as the underlying data
-3. **User experience wins**: Even the most powerful tool is useless if nobody can figure out how to use it
-4. **Open source rocks**: The ThatOpen community provided incredible support and resources
-
----
 
 ## Technical Specifications
 

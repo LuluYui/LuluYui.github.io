@@ -17,7 +17,8 @@
     "id": "BIMDigitalTwin",
     "title": "BIM Digital Twin with DMA/PMA Analytics",
     "description": "A 3D Building Information Modeling digital twin for water network visualization with real-time IoT sensor analytics.",
-    "coverImage": "/projects/scada-screenshot.png",
+    "coverImage": "/projects/BIMDigitalTwin/DMA_PMA.png",
+    "previewUrl": "https://waterleakgisplatform.vercel.app/#Viewer",
     "tags": [
       "TypeScript",
       "Three.js",
