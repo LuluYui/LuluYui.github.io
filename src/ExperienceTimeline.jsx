@@ -30,9 +30,9 @@ const useInView = (options) => {
 
 const experiences = [
     {
-        company: 'Advanced Resources Limited',
+        company: 'Advance Resources Limited',
         title: 'Technical Assistant (Contract) - Hong Kong Housing Authority Placement',
-        duration: 'Nov 2020 - Dec 2021',
+        duration: 'June 2024 - July 2025',
         description: [
           "Streamlined maintenance workflows for Multimedia Interactive Systems, achieving fast defect resolution through improved vendor negotiations.",
           "Authored technical guidelines and maintenance protocol, ensuring operational stability and zero equipment downtime."
@@ -41,7 +41,7 @@ const experiences = [
     {
         company: 'Ming Hing Waterworks Engineering Co. Ltd',
         title: 'Meter Works Coordinator - WSD HKSARG Placement',
-        duration: 'Nov 2020 - Dec 2021',
+        duration: 'June 2022 - July 2023',
         description: [
             "Leveraged ArcGIS Pro and Python to enhance DMA/PMA zonal data accuracy, troubleshooting water leak indicators errors of WSD INMS system.",
             "Developed In-house tools for WebGIS Visualization using Leaflet and OpenStreetMap, drafting presentations and reports."
